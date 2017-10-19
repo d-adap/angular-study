@@ -1,7 +1,7 @@
 import { AppRoutingModule } from './app-routing.module';
-import { HeroService } from './hero.service';
-import { HeroesComponent } from './heroes.component';
-import { HeroDetailComponent } from './hero-detail.component';
+import { HeroService } from './heroes/hero.service';
+import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailComponent } from './heroDetails/hero-detail.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
