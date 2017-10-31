@@ -31,7 +31,7 @@
     position: relative;
     top: -3px;
   }
-  .heroes .badge {
+  .heroes .badge1 {
     display: inline-block;
     font-size: small;
     color: white;
@@ -45,7 +45,7 @@
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
   }
-  button.delete {
+  button.delete1 {
     float:right;
     margin-top: 2px;
     margin-right: .8em;

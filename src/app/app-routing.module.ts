@@ -1,3 +1,4 @@
+import { AddHeroComponent } from './addHero/addHero.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './heroDetails/hero-detail.component';
 import { NgModule } from '@angular/core';
@@ -7,7 +8,8 @@ const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard',  component: DashboardComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
-  { path: 'heroes',     component: HeroesComponent }
+  { path: 'heroes',     component: HeroesComponent },
+  { path: 'hr',     component: AddHeroComponent }
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
