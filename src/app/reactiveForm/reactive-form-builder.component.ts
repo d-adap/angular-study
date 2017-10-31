@@ -1,4 +1,4 @@
-import { states } from './data-model';
+import { states, Address } from './data-model';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -18,10 +18,7 @@ export class ReactiveFormBuilderComponent {
   createForm() {
     this.heroForm = this.fb.group({
       name: ['', Validators.required],
-      street: '',
-      city: '',
-      state: ['', Validators.required],
-      zip: '',
+      address: this.fb.group(new Address()),
       power: '',
       sidekick: ''
     });
