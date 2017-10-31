@@ -1,7 +1,8 @@
+import { ReactiveFormBuilderComponent } from './reactiveForm/reactive-form-builder.component';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 // Imports for loading & configuring the in-memory web api
@@ -16,6 +17,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './heroDetails/hero-detail.component';
 import { HeroSearchComponent } from './heroSearch/hero-search.component';
 import { AddHeroComponent } from './addHero/addHero.component';
+import { ReactiveFormComponent } from './reactiveForm/reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,15 @@ import { AddHeroComponent } from './addHero/addHero.component';
     HeroesComponent,
     HeroDetailComponent,
     DashboardComponent,
-    HeroSearchComponent,
-    AddHeroComponent
+    HeroSearchComponent,
+    AddHeroComponent,
+    ReactiveFormComponent,
+    ReactiveFormBuilderComponent
 ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
     AppRoutingModule

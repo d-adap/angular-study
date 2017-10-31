@@ -1,3 +1,5 @@
+import { ReactiveFormBuilderComponent } from './reactiveForm/reactive-form-builder.component';
+import { ReactiveFormComponent } from './reactiveForm/reactive-form.component';
 import { AddHeroComponent } from './addHero/addHero.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './heroDetails/hero-detail.component';
@@ -9,7 +11,8 @@ const routes: Routes = [
   { path: 'dashboard',  component: DashboardComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'heroes',     component: HeroesComponent },
-  { path: 'hr',     component: AddHeroComponent }
+  { path: 'hr',     component: AddHeroComponent },
+  { path: 'reactiveForms',     component: ReactiveFormBuilderComponent },
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
