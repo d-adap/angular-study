@@ -123,7 +123,7 @@
     "component-selector": [
       true,
       "element",
-      ["app","hero","heroes","reactive"],
+      ["app","hero","heroes","reactive","df"],
       "kebab-case"
     ],
     "use-input-property-decorator": true,

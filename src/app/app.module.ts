@@ -1,3 +1,7 @@
+import { QuestionControlService } from './dynamicForms/question-control.service';
+import { QuestionService } from './dynamicForms/question.service';
+import { DynamicFormMainComponent } from './dynamicForms/dynamic-form-main.component';
+import { HeroListComponent } from './reactiveForm/hero-list/hero-list.component';
 import { ReactiveFormBuilderComponent } from './reactiveForm/reactive-form-builder.component';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
@@ -13,11 +17,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroService } from './heroes/hero.service';
+import { RxheroService } from './reactiveForm/hero-list/rxhero.service';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './heroDetails/hero-detail.component';
 import { HeroSearchComponent } from './heroSearch/hero-search.component';
 import { AddHeroComponent } from './addHero/addHero.component';
 import { ReactiveFormComponent } from './reactiveForm/reactive-form.component';
+import { DynamicFormsComponent } from './dynamicForms/dynamic-forms.component';
+import { DynamicFormQuestionComponent } from './dynamicForms/dynamic-form-question.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +35,11 @@ import { ReactiveFormComponent } from './reactiveForm/reactive-form.component';
     HeroSearchComponent,
     AddHeroComponent,
     ReactiveFormComponent,
-    ReactiveFormBuilderComponent
+    ReactiveFormBuilderComponent,
+    HeroListComponent,
+    DynamicFormsComponent,
+    DynamicFormQuestionComponent,
+    DynamicFormMainComponent
 ],
   imports: [
     BrowserModule,
@@ -38,7 +49,7 @@ import { ReactiveFormComponent } from './reactiveForm/reactive-form.component';
     InMemoryWebApiModule.forRoot(InMemoryDataService),
     AppRoutingModule
   ],
-  providers: [HeroService],
+  providers: [HeroService, RxheroService, QuestionService, QuestionControlService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
