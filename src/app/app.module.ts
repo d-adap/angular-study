@@ -1,3 +1,4 @@
+import { HilightDirective } from './directives/highlight.directive';
 import { QuestionControlService } from './dynamicForms/question-control.service';
 import { QuestionService } from './dynamicForms/question.service';
 import { DynamicFormMainComponent } from './dynamicForms/dynamic-form-main.component';
@@ -39,7 +40,8 @@ import { DynamicFormQuestionComponent } from './dynamicForms/dynamic-form-questi
     HeroListComponent,
     DynamicFormsComponent,
     DynamicFormQuestionComponent,
-    DynamicFormMainComponent
+    DynamicFormMainComponent,
+    HilightDirective
 ],
   imports: [
     BrowserModule,

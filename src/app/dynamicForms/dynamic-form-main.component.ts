@@ -10,7 +10,6 @@ import { QuestionService } from './question.service';
      <df-form [questions]="questions"></df-form>
    </div>
  `,
- providers:  [QuestionService]
 })
 export class DynamicFormMainComponent {
 

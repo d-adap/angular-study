@@ -24,5 +24,6 @@ h1 {
     background-color: #CFD8DC;
   }
   nav a.active {
-    color: rgba(245, 11, 11, 0.51);
+    color: rgba(206, 76, 76, 0.51);
+    font-weight: bold;
   }
