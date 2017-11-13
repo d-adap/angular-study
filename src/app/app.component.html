@@ -8,3 +8,9 @@
 </nav>
 
 <router-outlet></router-outlet>
+
+
+<a [routerLink]="[{ outlets: { popup: ['contact'] } }]">Contact</a>
+
+
+<router-outlet name="popup"></router-outlet>

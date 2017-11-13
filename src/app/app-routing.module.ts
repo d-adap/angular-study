@@ -1,3 +1,4 @@
+import { ContactComponent } from './contact/contact.component';
 import { DynamicFormMainComponent } from './dynamicForms/dynamic-form-main.component';
 import { HeroListComponent } from './reactiveForm/hero-list/hero-list.component';
 import { ReactiveFormBuilderComponent } from './reactiveForm/reactive-form-builder.component';
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'heroes',     component: HeroesComponent },
   { path: 'hr',     component: AddHeroComponent },
   { path: 'reactiveForms',     component: HeroListComponent },
-  { path: 'dynamicForms',     component: DynamicFormMainComponent }
+  { path: 'dynamicForms',     component: DynamicFormMainComponent },
+  { path: 'contact', component: ContactComponent, outlet: 'popup'}
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],

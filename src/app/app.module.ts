@@ -1,3 +1,4 @@
+import { ContactComponent } from './contact/contact.component';
 import { HilightDirective } from './directives/highlight.directive';
 import { QuestionControlService } from './dynamicForms/question-control.service';
 import { QuestionService } from './dynamicForms/question.service';
@@ -26,6 +27,7 @@ import { AddHeroComponent } from './addHero/addHero.component';
 import { ReactiveFormComponent } from './reactiveForm/reactive-form.component';
 import { DynamicFormsComponent } from './dynamicForms/dynamic-forms.component';
 import { DynamicFormQuestionComponent } from './dynamicForms/dynamic-form-question.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -41,10 +43,12 @@ import { DynamicFormQuestionComponent } from './dynamicForms/dynamic-form-questi
     DynamicFormsComponent,
     DynamicFormQuestionComponent,
     DynamicFormMainComponent,
-    HilightDirective
+    HilightDirective,
+    ContactComponent
 ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
