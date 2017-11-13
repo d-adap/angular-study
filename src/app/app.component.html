@@ -9,8 +9,7 @@
 
 <router-outlet></router-outlet>
 
+<a [routerLink]="[{ outlets: { contactForm: ['contact'] } }]">Contact</a>
 
-<a [routerLink]="[{ outlets: { popup: ['contact'] } }]">Contact</a>
 
-
-<router-outlet name="popup"></router-outlet>
+<router-outlet name="contactForm"></router-outlet>

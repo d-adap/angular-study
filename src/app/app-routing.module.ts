@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'hr',     component: AddHeroComponent },
   { path: 'reactiveForms',     component: HeroListComponent },
   { path: 'dynamicForms',     component: DynamicFormMainComponent },
-  { path: 'contact', component: ContactComponent, outlet: 'popup'}
+  { path: 'contact', component: ContactComponent, outlet: 'contactForm'}
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
