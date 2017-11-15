@@ -1,0 +1,7 @@
+<h2>Crises : </h2>
+<ul>
+  <li *ngFor="let crises of currentCrises" [class.selected]="crises === selectedCrises">
+      <span>{{crises.id}}</span> 
+      <span>{{crises.name}}</span>
+  </li>
+</ul>
